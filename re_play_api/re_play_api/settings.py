@@ -75,13 +75,24 @@ WSGI_APPLICATION = 're_play_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASE_URL=$(heroku config:get DATABASE_URL -a re-play-back) your_process
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'pern_store',
+#         'USER': 'postgres',
+#         'PASSWORD': '1',
+#         'HOST': 'localhost'
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pern_store',
-        'USER': 'postgres',
-        'PASSWORD': '1',
-        'HOST': 'localhost'
+        'NAME': 'postgresql-shaped-12001',
+        'USER': 'orienxqdmtzrzq',
+        'PASSWORD': '95dc93d713918b8525f1e39ec27862e23aeaf31950c7b08c59c59066285beaf8',
+        'HOST': 'ec2-52-44-209-165.compute-1.amazonaws.com'
     }
 }
 
