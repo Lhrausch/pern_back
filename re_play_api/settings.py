@@ -94,10 +94,10 @@ WSGI_APPLICATION = 're_play_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgresql-shaped-12001',
-        'USER': 'orienxqdmtzrzq',
-        'PASSWORD': '95dc93d713918b8525f1e39ec27862e23aeaf31950c7b08c59c59066285beaf8',
-        'HOST': 'ec2-52-44-209-165.compute-1.amazonaws.com'
+        'NAME': 'pern_store' ,
+        'USER': 'postgres',
+        'PASSWORD': '1',
+        'HOST': 'localhost'
     }
 }
 db_from_env = dj_database_url.config(conn_max_age=600) 
