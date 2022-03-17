@@ -27,12 +27,13 @@ SECRET_KEY = 'django-insecure-80f$n3=)=97ok(2lzb@g)bryqedg0ceh(k2&enx29a4@la54%f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 're-play-back.herokuapp.com']
+ALLOWED_HOSTS = ['localhost:3000', 're-play-back.herokuapp.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
     'rest_framework',
     're_play_app_api',
     'django.contrib.admin',
@@ -41,6 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
+CORS_ALLOWED_ORIGINS = [
+'localhost:3000',
+'http://localhost:3000',
+"http://re-play-back.herokuapp.com",
+"re-play-back.herokuapp.com",
+"http://localhost:3001",
+# ""
 ]
 
 MIDDLEWARE = [
