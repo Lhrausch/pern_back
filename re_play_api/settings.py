@@ -48,6 +48,14 @@ CORS_ALLOWED_ORIGINS = [
 "http://re-play-back.herokuapp.com",
 "http://localhost:3001",
 ]
+CORS_ALLOW_METHODS = [
+'DELETE',
+'GET',
+'OPTIONS',
+'PATCH',
+'POST',
+'PUT',
+]
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
