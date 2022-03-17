@@ -44,12 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 CORS_ALLOWED_ORIGINS = [
-'localhost:3000',
 'http://localhost:3000',
 "http://re-play-back.herokuapp.com",
-"re-play-back.herokuapp.com",
 "http://localhost:3001",
-# ""
 ]
 
 MIDDLEWARE = [
