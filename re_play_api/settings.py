@@ -47,6 +47,8 @@ CORS_ALLOWED_ORIGINS = [
 'http://localhost:3000',
 "http://re-play-back.herokuapp.com",
 "http://localhost:3001",
+'http://re-play-store.herokuapp,com',
+'https://re-play-store.herokuapp.com',
 ]
 CORS_ALLOW_METHODS = [
 'DELETE',
@@ -125,8 +127,8 @@ DATABASES = {
         'HOST': 'localhost'
     }
 }
-db_from_env = dj_database_url.config(conn_max_age=600) 
-DATABASES['default'].update(db_from_env) 
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
